@@ -2,4 +2,21 @@
 
 
 ![allusers](./client/src/assets/all_user.png)
-![addusers](./src/assets/add_user)
+![addusers](./client/src/assets/add_user)
+
+## Crud Application to test:
+* Create
+* Reade
+* Update
+* Delete
+
+## API endpoints:
+http://localhost/3001
+
+## Front end:
+* React
+* Styled component 
+
+## Back end
+* MongoDB
+* Node.js
