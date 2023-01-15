@@ -14,11 +14,12 @@ import { getUsers, deleteUser } from '../services/api'
 const StyledTable = styled(Table)`
   width: 90%;
   margin: 50px 0 0 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
 `
 const THead = styled(TableRow)`
   & > th {
     font-size: 20px;
-    background: #000000;
+    background: #84dcc6;
     color: #ffffff;
   }
 `
@@ -27,6 +28,13 @@ const TRow = styled(TableRow)`
     font-size: 18px;
   }
 `
+const EditButton = styled(Button)`
+background: #aa7fd6;
+`
+const DelButton = styled(Button)`
+background: #ffa69e;
+`
+
 
 const AllUsers = () => {
   const [users, setUsers] = useState([])
@@ -71,7 +79,7 @@ const AllUsers = () => {
             <TableCell>{user.email}</TableCell>
             <TableCell>{user.phone}</TableCell>
             <TableCell>
-              <Button
+              <EditButton
                 color="primary"
                 variant="contained"
                 style={{ marginRight: 10 }}
@@ -79,11 +87,11 @@ const AllUsers = () => {
                 to={`/edit/${user._id}`}
               >
                 Edit
-              </Button>
+              </EditButton>
 
-              <Button color="secondary" variant="contained" onClick={() => deleteOneUser(user._id)}>
+              <DelButton color="secondary" variant="contained" onClick={() => deleteOneUser(user._id)}>
                 Delete
-              </Button>
+              </DelButton>
             </TableCell>
           </TRow>
         ))}

@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles'
 import { NavLink } from 'react-router-dom'
 
 const Header = styled(AppBar)`
-  background: #111111;
+  background: #84dcc6;
 `
 const Tabs = styled(NavLink)`
   font-size: 20px;
@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <Header position="static">
       <Toolbar>
-        <Tabs to="/"> Crud Application</Tabs>
+        {/* <Tabs to="/"> Crud Application</Tabs> */}
         <Tabs to="/all"> All Users</Tabs>
         <Tabs to="/add"> Add Users</Tabs>
       </Toolbar>
