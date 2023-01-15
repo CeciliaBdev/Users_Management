@@ -8,6 +8,7 @@ import {
   Button,
 } from '@mui/material'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import { addUser } from '../services/api'
 
@@ -27,6 +28,7 @@ const defaultValue = {
 
 const AddUser = () => {
   const [user, setUser] = useState(defaultValue)
+  const navigate = useNavigate()
 
   const onValueChange = (event) => {
     // console.log(event.target.name, event.target.value)
@@ -37,7 +39,8 @@ const AddUser = () => {
   //asynchrone
   const addUserDetails = async () => {
     await addUser(user)
-    console.log(user)
+    // console.log(user)
+    navigate('/all')
   }
 
   return (

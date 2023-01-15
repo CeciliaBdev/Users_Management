@@ -3,16 +3,16 @@ const router = express.Router()
 const UserCtrl = require('../controllers/users')
 
 //creation
-router.post('/add', UserCtrl.createUser)
+router.post('/add', UserCtrl.addUser)
 
 //recuperation de tous les users
-router.get('/all', UserCtrl.getAllUsers)
+router.get('/', UserCtrl.getUsers)
 
-//recuperation d'un user par son id
-router.get('/:id', UserCtrl.getOneUser)
+// //recuperation d'un user par son id
+router.get('/:id', UserCtrl.getUserById)
 
 //modification d'un user
-router.put('/:id', UserCtrl.updateUser)
+router.put('/:id', UserCtrl.editUser)
 
 //suppression d'un user
 router.delete('/:id', UserCtrl.deleteUser)
