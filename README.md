@@ -2,7 +2,7 @@
 
 
 ![allusers](./client/src/assets/all_user.png)
-![addusers](./client/src/assets/add_user)
+![addusers](./client/src/assets/add_user.png)
 
 ## Crud Application to test:
 * Create
@@ -11,7 +11,7 @@
 * Delete
 
 ## API endpoints:
-http://localhost/3001
+http://localhost:3001/
 
 ## Front end:
 * React
