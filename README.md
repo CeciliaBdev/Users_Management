@@ -11,7 +11,7 @@
 * Delete
 
 ## API endpoints:
-http://localhost:3001/
+https://usersmanagement.rossa.ovh
 
 ## Front end:
 * React
