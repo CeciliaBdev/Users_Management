@@ -6,7 +6,7 @@ const UserCtrl = require('../controllers/users')
 router.post('/add', UserCtrl.addUser)
 
 //recuperation de tous les users
-router.get('/', UserCtrl.getUsers)
+router.get('/all', UserCtrl.getUsers)
 
 // //recuperation d'un user par son id
 router.get('/:id', UserCtrl.getUserById)
